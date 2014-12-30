@@ -1,0 +1,364 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Io</title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Io</h1>
+    </header>
+    <div id="container">
+      <p class="tagline"></p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/0o0o0o0/io/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/0o0o0o0/io/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/0o0o0o0/io" class="code">View Io on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <p>&lt;!DOCTYPE html&gt;</p>
+
+<p>
+</p>
+    
+    Gao WebHost
+    
+    
+    
+    
+
+<pre><code>&lt;link href="lib/jqueryui/css/ui-lightness/jquery-ui-1.10.3.custom.min.css" rel="stylesheet"&gt;
+&lt;link href="bootstrap/less/bootstrap.css" rel="stylesheet"&gt;
+&lt;link href="lib/fontawesome/css/font-awesome.min.css" rel="stylesheet"&gt;
+&lt;link href="lib/spectrum/spectrum.css" rel="stylesheet"&gt;
+&lt;link href="lib/crsa/crsa.browser.css" rel="stylesheet"&gt;
+&lt;link href="lib/crsa/edit.css" rel="stylesheet"&gt;
+
+&lt;script src="lib/less/less.js"&gt;&lt;/script&gt;
+
+&lt;script src="lib/jquery/jquery.js"&gt;&lt;/script&gt;
+&lt;script src="lib/jqueryui/js/jquery-ui-1.10.3.custom.js"&gt;&lt;/script&gt;
+
+&lt;script src="bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;script src="lib/nestedSortable/jquery.mjs.nestedSortable.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p></p>
+
+<p></p>
+
+
+
+<pre><code>&lt;script src="lib/crsa/crsa.select.min.js"&gt;&lt;/script&gt;
+&lt;script src="lib/crsa/crsa.undo.min.js"&gt;&lt;/script&gt;
+&lt;script src="lib/crsa/crsa.css.min.js"&gt;&lt;/script&gt;
+&lt;script src="lib/crsa/crsa.pages.min.js"&gt;&lt;/script&gt;
+&lt;script src="lib/crsa/crsa.storage.min.js"&gt;&lt;/script&gt;
+&lt;script src="lib/crsa/crsa.store.min.js"&gt;&lt;/script&gt;
+&lt;script src="lib/crsa/crsa.project.min.js"&gt;&lt;/script&gt;
+
+&lt;script src="lib/crsa/crsa.tree.min.js"&gt;&lt;/script&gt;
+&lt;script src="lib/crsa/app.explainer.min.js"&gt;&lt;/script&gt;
+&lt;script src="lib/crsa/crsa.tour.min.js"&gt;&lt;/script&gt;
+&lt;script src="lib/spectrum/spectrum.js"&gt;&lt;/script&gt;
+&lt;script src="lib/formathtml/formathtml.js"&gt;&lt;/script&gt;
+&lt;script src="lib/crsa/pinegrow.min.js"&gt;&lt;/script&gt;
+&lt;script src="lib/crsa/pg-parser.min.js"&gt;&lt;/script&gt;
+&lt;script src="lib/crsa/pg-query.min.js"&gt;&lt;/script&gt;
+&lt;script src="lib/crsa/crsa.edit.min.js"&gt;&lt;/script&gt;
+
+&lt;script src="frameworks/cssrules.js"&gt;&lt;/script&gt;
+&lt;script src="frameworks/html.js"&gt;&lt;/script&gt;
+&lt;script src="frameworks/bootstrap.3.3.1.js"&gt;&lt;/script&gt;
+&lt;script src="frameworks/foundation.5.4.5.js"&gt;&lt;/script&gt;
+&lt;script src="frameworks/960grid.js"&gt;&lt;/script&gt;
+
+&lt;script src="lib/crsa/crsa.min.js"&gt;&lt;/script&gt;
+
+
+&lt;script src="lib/ace/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+
+   &lt;script&gt;
+    var qs = (function(a) {
+        if (a == "") return {};
+        var b = {};
+        for (var i = 0; i &lt; a.length; ++i)
+        {
+            var p=a[i].split('=');
+            if (p.length != 2) continue;
+            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+        }
+        return b;
+    })(window.location.search.substr(1).split('&amp;'));
+
+    crsaProject = new CrsaProject();
+    var d = {
+        url : 'placeholders/',
+        name : 'Sample assets',
+        pages : []
+    };
+    for(var i = 1; i &lt;= 9; i++) {
+        d.pages.push({src: 'img' + i + '.jpg', image: 'img' + i + '.jpg'});
+    }
+    crsaProject.fromSimpleTemplate(d);
+
+    window.crsaStorage = new CrsaLocalStorage();
+
+    $(function() {
+
+        var pages = [
+        ];
+
+        for(var i = 0; i &lt; 10; i++) {
+            var key = i == 0 ? 'page' : 'page' + i;
+            var page = key in qs ? qs[key] : null;
+            if(page) {
+                pages.push({name: 'Page', src: page})
+            }
+        }
+
+        var examples = {
+            url : 'templates/examples/',
+            name : 'Bootstrap 3.3.1',
+            pages : [
+                {src: 'new.html', tag: 'page'},
+                {src: 'starter-template.html', tag: 'page'},
+                {src: 'dashboard.html', tag: 'page'},
+                {src: 'jumbotron.html', tag: 'page'},
+                {src: 'jumbotron-narrow.html', tag: 'page'},
+                {src: 'justified-nav.html', tag: 'page'},
+                {src: 'navbar.html', tag: 'page'},
+                // {src: 'navbar-fixed-top.html', tag: 'page'},
+                //{src: 'navbar-static-top.html', tag: 'page'},
+                {src: 'non-responsive.html', tag: 'page'},
+                {src: 'offcanvas.html', tag: 'page'},
+                //{src: 'signin.html', tag: 'page'},
+                {src: 'grid.html', tag: 'page'},
+                {src: 'sticky-footer.html', tag: 'page'},
+                {src: 'sticky-footer-navbar.html', tag: 'page'},
+                {src: 'theme.html', tag: 'page'},
+                {src: 'carousel.html', tag: 'page'},
+                {src: 'cover.html', tag: 'page'},
+                {src: 'bootstrap', required: true, children:[
+                    {src: 'css', required: true, children:[
+                        {src: 'bootstrap.css', required: true},
+                        {src: 'bootstrap.css.map', required: true},
+                        {src: 'bootstrap.min.css', required: true},
+                        {src: 'bootstrap-theme.css', required: true},
+                        {src: 'bootstrap-theme.min.css', required: true}
+                    ]},
+                    {src: 'fonts', required: true, children:[
+                        {src: 'glyphicons-halflings-regular.eot', required: true},
+                        {src: 'glyphicons-halflings-regular.svg', required: true},
+                        {src: 'glyphicons-halflings-regular.ttf', required: true},
+                        {src: 'glyphicons-halflings-regular.woff', required: true}
+                    ]},
+                    {src: 'js', required: true, children:[
+                        {src: 'bootstrap.js', required: true},
+                        {src: 'bootstrap.min.js', required: true}
+                    ]}
+                ]},
+                {src: 'assets', required: true, children:[
+                    {src: 'js', required: true, children:[
+                        {src: 'jquery.min.js', required: true},
+                        {src: 'ie10-viewport-bug-workaround.js', required: true},
+                        {src: 'retina.min.js', required: true},
+                        {src: 'holder.js', required: true},
+                        {src: 'holder.min.js', required: true}
+                    ]}
+                ]}
+            ]
+        }
+
+        var foundation = {
+            url : 'templates/foundation/',
+            name : 'Foundation 5.4.5',
+            pages : [
+                {src: 'blank.html', tag: 'page'},
+                {src: 'branded.html', tag: 'page'},
+                {src: 'blog.html', tag: 'page'},
+                {src: 'feed.html', tag: 'page'},
+                {src: 'grid.html', tag: 'page'},
+                {src: 'orbit-home.html', tag: 'page'},
+                {src: 'banner-home.html', tag: 'page'},
+                {src: 'sidebar.html', tag: 'page'},
+                {src: 'contact.html', tag: 'page'},
+                {src: 'marketing.html', tag: 'page'},
+                {src: 'reality.html', tag: 'page'},
+                {src: 'so-boxy.html', tag: 'page'},
+                {src: 'store.html', tag: 'page'},
+                {src: 'workspace.html', tag: 'page'},
+                {src: 'img', required: true, children:[
+                ]},
+                {src: 'css', required: true, children:[
+                    {src: 'foundation.css', required: true},
+                    {src: 'foundation.min.css', required: true},
+                    {src: 'normalize.css', required: true}
+                ]},
+                {src: 'js', required: true, children:[
+                    {src: 'foundation.min.js', required: true},
+                    {src: 'vendor', required: true, children:[
+                        {src: 'fastclick.js', required: true},
+                        {src: 'jquery.cookie.js', required: true},
+                        {src: 'jquery.js', required: true},
+                        {src: 'modernizr.js', required: true},
+                        {src: 'placeholder.js', required: true}
+                    ]}
+                ]}
+            ]
+        }
+
+        var bootstrap2 = {
+            url : 'templates/bootstrap2/',
+            name : 'Bootstrap 2.3',
+            frameworks : ['bs2.3.2'],
+            pages : [
+              //  {src: 'new.html', tag: 'page'},
+                {src: 'starter-template.html', tag: 'page'},
+                {src: 'fluid.html', tag: 'page'},
+                {src: 'hero.html', tag: 'page'},
+                {src: 'justified-nav.html', tag: 'page'},
+                {src: 'signin.html', tag: 'page'},
+                {src: 'sticky-footer.html', tag: 'page'},
+             //   {src: 'sticky-footer-navbar.html', tag: 'page'},
+                {src: 'marketing-narrow.html', tag: 'page'},
+                {src: 'bootstrap', required: true, children:[
+                    {src: 'css', required: true, children:[
+                        {src: 'bootstrap.css', required: true},
+                        {src: 'bootstrap.min.css', required: true},
+                        {src: 'bootstrap-responsive.css', required: true},
+                        {src: 'bootstrap-responsive.min.css', required: true}
+                    ]},
+                    {src: 'js', required: true, children:[
+                        {src: 'bootstrap.js', required: true},
+                        {src: 'bootstrap.min.js', required: true},
+                        {src: 'jquery.js', required: true}
+                    ]}
+                ]}
+            ]
+        }
+
+        var html = {
+            url : 'templates/html/',
+            name : 'Plain HTML',
+            pages : [
+                {src: 'new.html', tag: 'page'},
+                {src: 'css', required: true, children:[
+                     {src: 'style.css', required: true}
+                ]}
+            ]
+        }
+
+        var angular = {
+            url : 'templates/angular/',
+            name : 'AngularJS',
+            pages : [
+                {src: 'todo.html', tag: 'page'},
+                {src: 'todo.js', required: true},
+                {src: 'angular.js', required: true},
+                {src: 'bootstrap', required: true, children:[
+                    {src: 'css', required: true, children:[
+                        {src: 'bootstrap.css', required: true}
+                    ]},
+                    {src: 'fonts', required: true, children:[
+                        {src: 'glyphicons-halflings-regular.eot', required: true},
+                        {src: 'glyphicons-halflings-regular.svg', required: true},
+                        {src: 'glyphicons-halflings-regular.ttf', required: true},
+                        {src: 'glyphicons-halflings-regular.woff', required: true}
+                    ]},
+                    {src: 'js', required: true, children:[
+                        {src: 'bootstrap.js', required: true},
+                        {src: 'bootstrap.min.js', required: true}
+                    ]}
+                ]},
+                {src: 'assets', required: true, children:[
+                    {src: 'js', required: true, children:[
+                        {src: 'jquery.min.js', required: true},
+                        {src: 'ie10-viewport-bug-workaround.js', required: true},
+                        {src: 'retina.min.js', required: true}
+                    ]}
+                ]}
+            ]
+        }
+
+
+        $('body').crsa({
+            pages : pages,
+            templates : [examples, foundation, html, angular]
+            //templates : [examples, foundation, bootstrap2, html]
+        });
+
+    });
+
+    if(isApp()) {
+    } else {
+</code></pre>
+
+<p>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');</p>
+
+<p>ga('create', 'UA-57858711-1', 'auto');
+  ga('send', 'pageview');</p>
+
+<pre><code>    }
+    gaSendPageView();
+
+&lt;/script&gt;
+</code></pre>
+
+<p></p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/0o0o0o0" class="avatar"><img src="https://avatars0.githubusercontent.com/u/10349493?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/0o0o0o0">0o0o0o0</a> maintains <a href="https://github.com/0o0o0o0/io">Io</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/0o0o0o0/io/tarball/master" class="tar">tar</a><a href="https://github.com/0o0o0o0/io/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-57858711-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+</body>
+</html>
